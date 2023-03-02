@@ -1,0 +1,36 @@
+.cube-hotzone-zone {
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 0 6px #000;
+  background-color: #e31414;
+  opacity: 0.8;
+  color: #fff;
+  &-delete {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: default;
+    font-size: 18px;
+  }
+  &-handle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &-ball {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    display: inline-block;
+    cursor: se-resize;
+  }
+}
+
+.cube-hotzone-zone-none {
+  background: #373950;
+}

@@ -1,0 +1,30 @@
+.cube-hotzone-modal {
+  animation-duration: 0ms !important; // 动画对测量有影响
+  .wrapper {
+    display: flex;
+    .wrapper-left {
+      width: 375px;
+      max-height: 667px;
+      overflow: auto;
+      .img-wrapper {
+        position: relative;
+        .cube-hotzone-img {
+          width: 100%;
+          width: 375px;
+          user-select: none;
+          cursor: crosshair;
+        }
+      }
+    }
+    .wrapper-right {
+      user-select: none;
+      margin-left: 30px;
+      width: 300px;
+      max-height: 667px;
+      overflow: auto;
+      .zone-block {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
